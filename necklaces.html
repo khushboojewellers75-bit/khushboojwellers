@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Khushboo Jewellers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>KHUSHBOO </h1>
+                   <span class="tagline">JEWELLERS</span>
+                </div>
+
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="rings.html">Rings</a></li>
+                        <li><a href="earrings.html">Earrings</a></li>
+                        <li><a href="necklaces.html">Necklaces</a></li>
+                        <li><a href="bangles.html">Bangles</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="user-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="gold-rate-widget" id="goldRateWidget">
+                <div class="rate-header">
+                    <i class="fas fa-coins"></i>
+                    <span>Live Rates</span>
+                    <button class="toggle-rates" id="toggleRates">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="rates-content" id="ratesContent">
+                    <div class="rate-item">
+                        <span class="metal">Gold 24K</span>
+                        <span class="price" id="gold24k">₹6,420/g</span>
+                        <span class="change positive" id="gold24kChange">+0.23%</span>
+                    </div>
+                    <div class="rate-item">
+                        <span class="metal">Gold 22K</span>
+                        <span class="price" id="gold22k">₹5,885/g</span>
+                        <span class="change positive" id="gold22kChange">+0.20%</span>
+                    </div>
+                    <div class="rate-item">
+                        <span class="metal">Silver</span>
+                        <span class="price" id="silver">₹78.50/g</span>
+                        <span class="change negative" id="silverChange">-0.63%</span>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rings.html">Rings</a></li>
+                <li><a href="earrings.html">Earrings</a></li>
+                <li><a href="necklaces.html">Necklaces</a></li>
+                <li><a href="bangles.html">Bangles</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+  <section class="rings-hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Luxury Necklaces Collection</h1>
+        <p>Explore our handcrafted necklaces designed to dazzle on every occasion</p>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1606313564200-9b89f9dddb8a?w=800&h=600&fit=crop" alt="Necklace Collection">
+    </div>
+  </section>
+
+  <section class="ring-categories">
+    <div class="container">
+      <div class="section-header">
+        <h2>Necklace Categories</h2>
+        <p>Discover elegant designs for all occasions</p>
+      </div>
+      <div class="category-filters">
+        <button class="filter-btn active" data-category="all">All Necklaces</button>
+        <button class="filter-btn" data-category="chains">Chains</button>
+        <button class="filter-btn" data-category="pendants">Pendants</button>
+        <button class="filter-btn" data-category="bridal">Bridal</button>
+        <button class="filter-btn" data-category="diamond">Diamond</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="rings-grid">
+    <div class="container">
+      <div class="products-grid" id="necklacesGrid"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-section contact-info">
+          <h3>KHUSHBOO JEWELLERS</h3>
+          <p>123 Jewel Street, Gem City, GC 45678</p>
+          <p>Phone: +91 98765 43210</p>
+          <p>Email: info@khushboojewellers.com</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Collections</h4>
+          <ul>
+            <li><a href="#">Rivaah</a></li>
+            <li><a href="#">Mia</a></li>
+            <li><a href="#">Divyam</a></li>
+            <li><a href="#">Enchanted Trails</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="rings.html">Rings</a></li>
+            <li><a href="earrings.html">Earrings</a></li>
+            <li><a href="necklaces.html">Necklaces</a></li>
+            <li><a href="bangles.html">Bangles</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Customer Care</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Store Locator</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Care Instructions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Khushboo Jewellers. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./necklaces.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

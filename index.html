@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Khushboo Jewellers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>KHUSHBOO </h1>
+                   <span class="tagline">JEWELLERS</span>
+                </div>
+
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="rings.html">Rings</a></li>
+                        <li><a href="earrings.html">Earrings</a></li>
+                        <li><a href="necklaces.html">Necklaces</a></li>
+                        <li><a href="bangles.html">Bangles</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <div class="search-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="user-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="gold-rate-widget" id="goldRateWidget">
+                <div class="rate-header">
+                    <i class="fas fa-coins"></i>
+                    <span>Live Rates</span>
+                    <button class="toggle-rates" id="toggleRates">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="rates-content" id="ratesContent">
+                    <div class="rate-item">
+                        <span class="metal">Gold 24K</span>
+                        <span class="price" id="gold24k">₹6,420/g</span>
+                        <span class="change positive" id="gold24kChange">+0.23%</span>
+                    </div>
+                    <div class="rate-item">
+                        <span class="metal">Gold 22K</span>
+                        <span class="price" id="gold22k">₹5,885/g</span>
+                        <span class="change positive" id="gold22kChange">+0.20%</span>
+                    </div>
+                    <div class="rate-item">
+                        <span class="metal">Silver</span>
+                        <span class="price" id="silver">₹78.50/g</span>
+                        <span class="change negative" id="silverChange">-0.63%</span>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rings.html">Rings</a></li>
+                <li><a href="earrings.html">Earrings</a></li>
+                <li><a href="necklaces.html">Necklaces</a></li>
+                <li><a href="bangles.html">Bangles</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Discover Timeless Elegance</h1>
+                <p>Exquisite jewelry crafted with precision and passion. Explore our exclusive collections that celebrate life's precious moments.</p>
+                <button class="cta-button">Explore Collections</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&h=600&fit=crop" alt="Luxury Jewelry">
+        </div>
+    </section>
+    <section class="gold-rate-section">
+    <div class="container">
+        <div class="gold-rate-widget">
+            <div class="rate-header">
+                <i class="fas fa-chart-line"></i>
+                <span>Today's Gold & Silver Rate</span>
+                </div>
+            <div class="rates-content">
+                <div class="rate-item">
+                    <span class="metal">24K Gold (10g)</span>
+                    <span class="price" id="gold24k">₹65,000</span>
+                    <span class="change positive">+250</span>
+                </div>
+                <div class="rate-item">
+                    <span class="metal">22K Gold (10g)</span>
+                    <span class="price" id="gold22k">₹60,000</span>
+                    <span class="change negative">-150</span>
+                </div>
+                <div class="rate-item">
+                    <span class="metal">Silver (1kg)</span>
+                    <span class="price" id="silver">₹75,000</span>
+                    <span class="change positive">+500</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="collections" class="collections">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Premium Collections</h2>
+                <p>Discover our signature jewelry collections, each telling a unique story</p>
+            </div>
+            <div class="collections-grid" id="collectionsGrid">
+                </div>
+        </div>
+    </section>
+
+    <section id="categories" class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Jewelry Categories</h2>
+                <p>Find the perfect piece for any occasion</p>
+            </div>
+            <div class="category-list">
+                <a href="rings.html" class="category-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3K4-dAYFdffpBBFO1vBqZLmwqQnRnwCjlWA&s" alt="Rings">
+                    <h3>Rings</h3>
+                </a>
+                <a href="earrings.html" class="category-card">
+                    <img src="data:image/jpeg;base64,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" alt="Earrings">
+                    <h3>Earrings</h3>
+                </a>
+                <a href="necklaces.html" class="category-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Lrw1ix6HBU9aIVyiCyadfpdy6bxxW1qg_g&s" alt="Necklaces">
+                    <h3>Necklaces</h3>
+                </a>
+                <a href="bangles.html" class="category-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq_-UmIerpdwiY3r9ZZTstsegowjywHeJ71A&s" alt="Bangles">
+                    <h3>Bangles</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Hear from those who cherish our creations</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>The craftsmanship is simply breathtaking. My engagement ring is everything I dreamed of and more. Thank you, Khushboo Jewellers!</p>
+                    <div class="customer-info">
+                        <p class="customer-name">Priya S.</p>
+                        <p class="customer-location">Bangalore</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>I found the perfect gift for my mother. The quality and service were impeccable. I highly recommend them to everyone.</p>
+                    <div class="customer-info">
+                        <p class="customer-name">Amit R.</p>
+                        <p class="customer-location">Mumbai</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Their collections are unique and contemporary. I love my new gold hoops; they are perfect for daily wear.</p>
+                    <div class="customer-info">
+                        <p class="customer-name">Shreya K.</p>
+                        <p class="customer-location">Delhi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1599643478518-9e6a9d7d6c6c?w=400&h=400&fit=crop" alt="About Us">
+                </div>
+                <div class="about-text">
+                    <h2>About Khushboo Jewellers</h2>
+                    <p>For over four decades, Khushboo Jewellers has been a symbol of trust and exquisite craftsmanship in the world of fine jewelry. We are dedicated to creating timeless pieces that blend traditional artistry with modern design, celebrating life's most precious moments with you.</p>
+                    <p>Each piece is meticulously handcrafted by our skilled artisans, using the finest materials to ensure unparalleled quality and beauty. We believe that jewelry is more than just an accessory; it's a story, a memory, and a legacy to be treasured for generations.</p>
+                    <button class="btn-primary">Our Story</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section contact-info">
+                    <h3>KHUSHBOO JEWELLERS</h3>
+                    <p>123 Jewel Street, Gem City, GC 45678</p>
+                    <p>Phone: +91 98765 43210</p>
+                    <p>Email: info@khushboojewellers.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Collections</h4>
+                    <ul>
+                        <li><a href="#">Rivaah</a></li>
+                        <li><a href="#">Mia</a></li>
+                        <li><a href="#">Divyam</a></li>
+                        <li><a href="#">Enchanted Trails</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="rings.html">Rings</a></li>
+                        <li><a href="earrings.html">Earrings</a></li>
+                        <li><a href="necklaces.html">Necklaces</a></li>
+                        <li><a href="bangles.html">Bangles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Care Instructions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Khushboo Jewellers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./home.js"></script>
+</body>
+
+</html>
