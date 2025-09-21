@@ -76,3 +76,22 @@ function displayCollections() {
 document.addEventListener('DOMContentLoaded', () => {
   displayCollections();
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.getElementById('contactForm');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault(); // Prevent the default form submission
+
+            const formMessage = document.createElement('p');
+            formMessage.textContent = 'Thank you for your message! We will get back to you shortly.';
+            formMessage.style.color = 'green';
+            formMessage.style.marginTop = '1rem';
+            formMessage.style.fontWeight = 'bold';
+
+            contactForm.appendChild(formMessage);
+            contactForm.reset(); // Clear the form fields
+        });
+    }
+});
